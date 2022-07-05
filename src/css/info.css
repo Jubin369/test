@@ -1,0 +1,61 @@
+.info-container {
+  display: flex;
+  justify-content: center;
+}
+
+.info-form {
+  padding-top: 12px;
+  display: flex;
+  flex-direction: column;
+  width: 85%;
+}
+
+.info-input {
+  width: 97%;
+  color: var(--black);
+  background-color: var(--white);
+  outline: none;
+  border: none;
+  padding: 20px 0 20px 15px;
+  border-radius: 10px;
+  margin: 10px 0;
+}
+
+.info-input::placeholder {
+  color: var(--black);
+}
+
+#name {
+  margin-top: 15px;
+}
+
+#connect-quest {
+  margin-bottom: 15px;
+}
+
+#submit-info-btn {
+  padding: 20px 10px;
+  border-radius: 10px;
+  margin-top: 15px;
+  outline: none;
+  border: none;
+  text-transform: uppercase;
+  font-style: bold;
+  color: var(--white);
+  background-color: var(--background-color);
+}
+
+#submit-info-btn:hover {
+  cursor: pointer;
+}
+
+.region-container {
+  position: relative;
+}
+
+.map-icon {
+  color: var(--text-blue);
+  position: absolute;
+  right: 15px;
+  top: 30px;
+}
