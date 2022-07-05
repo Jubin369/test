@@ -100,7 +100,8 @@
   color: #19d338;
   position: relative;
   align-items: flex-start;
-  font-size: x-large;
+  font-size: 1.2rem;
+  font-weight: 600;
 }
 .title::before {
     position: absolute;
