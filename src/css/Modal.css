@@ -49,7 +49,7 @@
   text-align: center;
  font-weight: 700;
   height: auto;
-  font-size: 30px;
+  font-size: 40px;
   margin: auto;
   border-radius: 10px;
   outline: none;
@@ -63,7 +63,7 @@
 .modal-container h2 {
   font-weight: 800;
   font-size: 40px;
-  color: #19d338;
+  color: #1CC88A;
   /* animation: blink 1s linear infinite; */
 }
 @keyframes blink{
@@ -87,7 +87,7 @@
   display: grid;
   background: #fafafa;
   border-radius: 10px;
-  box-shadow: 0px 0px 3px #19d338;
+  box-shadow: 0px 0px 3px #1CC88A;
 }
 .card:hover {
   border: 2px solid #4b23b9;
@@ -97,7 +97,7 @@
   width: 100%;
   text-align: left;
   margin: auto;
-  color: #19d338;
+  color: #1CC88A;
   position: relative;
   align-items: flex-start;
   font-size: 1.2rem;
@@ -140,7 +140,7 @@
     bottom: 2px;
     width: 2px;
     height: 15px;
-    background: #19d338;
+    background: #1CC88A;
   }
 
 
@@ -160,7 +160,7 @@
 }
 
 .box__title {
-  color: #19d338;
+  color: #1CC88A;
   text-transform: uppercase;
   letter-spacing: 2px;
   position: relative;
@@ -172,7 +172,7 @@
 .box__title::before{
   position: absolute;
   content: '';
-  background: #19d338;
+  background: #1CC88A;
   top: 50%;
   left: 50%;
   transform: translate(-50%,-50%);
