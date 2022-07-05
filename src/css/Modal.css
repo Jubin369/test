@@ -20,6 +20,8 @@
   background-color: #D4DAE1;
   margin: auto;
   border-radius: 10px;
+  padding: 30px;
+  margin-bottom: 50px;
 }
 .toggle-button {
   background-color: #19d338;
@@ -86,7 +88,7 @@
   margin: 5px;
   display: grid;
   background: #fafafa;
-  border-radius: 10px;
+  border-radius: 4px;
   box-shadow: 0px 0px 3px #19d338;
 }
 
@@ -97,7 +99,6 @@
   margin: auto;
   color: #19d338;
   position: relative;
-  font-style: italic;
   align-items: flex-start;
 }
 .title::before {
