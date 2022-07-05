@@ -91,7 +91,9 @@
   border-radius: 4px;
   box-shadow: 0px 0px 3px #19d338;
 }
-
+.card:hover {
+  border: 2px solid #4b23b9;
+}
 .title {
   background: #fafafa;
   width: 100%;
