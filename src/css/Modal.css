@@ -29,7 +29,7 @@
   margin: 10px 0;
   border: none;
   cursor: pointer;
-  width: 100%;
+  width: 83% !important;
   opacity: 1;
   border-radius: 6px;
   font-size: large;
@@ -38,7 +38,7 @@
 
 .modal-name,
 .modal-region {
-  color: var(--text-green);
+  color: #2a4769;
   box-sizing: border-box;
   /* background-color: var(--white); */
   display: flex;
@@ -57,10 +57,6 @@
 }
 .modal-region {
   margin-bottom: 2rem;
-}
-.modal-name span,
-.modal-region span {
-  color: red;
 }
 
 .modal-container h2 {
