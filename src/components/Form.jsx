@@ -42,7 +42,7 @@ const Form = () => {
   const [show, setShow] = useState(false);
 
   useEffect(()=>{
-    axios.get("https://agile-cove-11802.herokuapp.com/naspo").then(res=>{
+    axios.get("http://localhost:7632/naspo").then(res=>{
         const dat = res.data;
         console.log(dat);
         setPeople(dat);
@@ -456,7 +456,7 @@ const Form = () => {
   const submitTheForm = (e) => {
     let data = {"data":[fname,formData.region,check1,check2,check3,check4,check5,check6]};
    console.log(data);
-   axios.post('https://agile-cove-11802.herokuapp.com/naspo', data)
+   axios.post('http://localhost:7632/naspo', data)
     .then(response => {
         console.log(response);
         console.log('success');
