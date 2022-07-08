@@ -9,6 +9,7 @@
   background-color: #2a4769 !important;
   color: white;
   text-align: center;
+  justify-content: center;
   padding: 20px;
 }
 
@@ -16,22 +17,24 @@
   display: flex;
   flex-direction: column;
   text-align: center;
-  max-width: 80vw;
+  max-width: 70vw;
   background-color: #D4DAE1;
   margin: auto;
   border-radius: 10px;
-  padding: 30px;
   margin-bottom: 50px;
+  padding: 30px;
+  padding-top: 0px;
+  margin-top: 100px;
 }
 .toggle-button {
-  background-color: #19d338;
+  background-color: #1CC88A;;
   align-self: center;
   color: white;
   padding: 14px 20px;
   margin: 10px 0;
   border: none;
   cursor: pointer;
-  width: 83% !important;
+  width: 100% !important;
   opacity: 1;
   border-radius: 6px;
   font-size: large;
@@ -47,13 +50,13 @@
   justify-content: center;
   align-items: center;
   text-align: center;
- font-weight: 700;
+ font-weight: 800;
   height: auto;
-  font-size: 40px;
+  font-size: 36px;
   margin: auto;
-  border-radius: 10px;
   outline: none;
-  padding-top: 20px;
+  padding-top: 10px;
+  padding-bottom: 20px;
   /* box-shadow: 2px 2px 10px grey; */
 }
 .modal-region {
@@ -61,9 +64,9 @@
 }
 
 .modal-container h2 {
-  font-weight: 800;
+  font-weight: 700;
   font-size: 40px;
-  color: #1CC88A;
+  color:#1CC88A;
   /* animation: blink 1s linear infinite; */
 }
 @keyframes blink{
@@ -72,7 +75,7 @@
   100%{opacity: 1;}
   }
 .card-container {
-  display: grid;
+  
   min-height: 50vh;
   background: transparent;
   place-items: center;
@@ -80,29 +83,32 @@
 }
 
 .card {
-  width: 80%;
-  box-shadow: 5px 5px 10px rgba(0,0,0,0.3);
-  padding: 1em;
+  width: 93%;
+  padding: 1.5em;
+  padding-left: 2em;
+  padding-bottom: 0em;
   margin: 5px;
+  margin-bottom: 2rem;
   display: grid;
-  background: #fafafa;
+  background: #FFFFFF;
+  border: 1px solid #1CC88A;
   border-radius: 10px;
-  box-shadow: 0px 0px 3px #1CC88A;
 }
-.card:hover {
-  border: 2px solid #4b23b9;
-}
+
 .title {
-  background: #fafafa;
+ 
   width: 100%;
   text-align: left;
   margin: auto;
-  color: #1CC88A;
   position: relative;
   align-items: flex-start;
-  font-size: 1.2rem;
-  font-weight: 600;
-  margin-top: 14px;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+  /* identical to box height */
+  color: #1CC88A;
 }
 .title::before {
     position: absolute;
@@ -141,7 +147,7 @@
     bottom: 2px;
     width: 2px;
     height: 15px;
-    background: #1CC88A;
+    background: #19d338;
   }
 
 
@@ -161,7 +167,7 @@
 }
 
 .box__title {
-  color: #1CC88A;
+  color: #19d338;
   text-transform: uppercase;
   letter-spacing: 2px;
   position: relative;
@@ -173,7 +179,7 @@
 .box__title::before{
   position: absolute;
   content: '';
-  background: #1CC88A;
+  background: #19d338;
   top: 50%;
   left: 50%;
   transform: translate(-50%,-50%);
@@ -182,18 +188,56 @@
   z-index: -10;
 }
 .box__desc {
-  line-height: 1.2rem;
+  
   color: #455E7C;
   text-align: left;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 21px;
+  line-height: 24px;
 }
 .box__text {
   padding: 0;
 }
-@media(max-width:512px){
+@media(max-width:612px){
   .box__desc {
     font-size: 12px;
   }
-  .card{
-    width: 350px;
+  .card-container{
+    display: grid;
+    padding-bottom: 0;
+    padding: 0;
   }
+  .card{
+    width: 80%;
+    padding: 1em;
+    margin: 5px;
+    display: grid;
+    background: #fafafa;
+    border-radius: 10px;
+  }
+  .modal-name,
+.modal-region {
+  font-size: 20px;
+  padding: 10px;
+  width: auto;
+}
+.modal-container h2 {
+  font-size: 30px;
+}
+.modal-container{
+  padding: 0;
+}
+.modal-container-body {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  max-width: 80vw;
+  background-color: #D4DAE1;
+  margin: auto;
+  border-radius: 10px;
+  padding: 30px;
+  margin-bottom: 50px;
+}
 }
