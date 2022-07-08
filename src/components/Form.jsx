@@ -112,10 +112,10 @@ const Form = () => {
 
 
   //   HANDLES NAME CHANGE
-  const handleNameChange = (e) => {
-    // // console.log(e.target.value);
-    setfname(e.target.fname);
-    setfname(e.target.value);
+  const handleNameChange = (value) => {
+      // console.log(e.target.value);
+    // setfname(e.target.fname);
+    setfname(value);
     // console.log(e);
     var newData = {};
     var newArray;
@@ -132,12 +132,12 @@ const Form = () => {
     console.log(newData["people"]);
     console.log(newData);
     newData.people.forEach((person) => {
-      if (person.fullname === e.target.value.toLowerCase()) {
-        console.log(
-          e.target.parentElement.parentElement.children[1].children[0]
-        );
-        e.target.parentElement.parentElement.children[1].children[0].value =
-          person.region;
+      if (person.fullname === value.toLowerCase()) {
+        // console.log(
+        //   e.target.parentElement.parentElement.children[1].children[0]
+        // );
+        // e.target.parentElement.parentElement.children[1].children[0].value =
+        //   person.region;
         handleRegionChange(person.region);
       }
     });
@@ -497,7 +497,9 @@ const Form = () => {
                   id="name"
                   placeholder="Name"
                   
-                  onChange={handleNameChange}
+                  onChange={(e)=>{
+                    handleNameChange(e.value)
+                  }}
                   //onKeyDown={handleNameKeyDown}
                 />
               </div>
