@@ -1,7 +1,8 @@
 import React from "react";
 import "../css/form.css";
 import { useState,useEffect } from "react";
-import Select from 'react-select'
+import CreatableSelect from 'react-select/creatable';
+import { ActionMeta, OnChangeValue } from 'react-select';
 import Modal from "./Modal";
 import banner from "../images/banner.png";
 import "../css/info.css";
@@ -491,12 +492,11 @@ const Form = () => {
           <div className="info-container">
             <form className="info-form">
               <div className="form-group">
-                <Select 
+                <CreatableSelect
                   options={options}
                   name="name"
                   id="name"
                   placeholder="Name"
-                  
                   onChange={(e)=>{
                     handleNameChange(e.value)
                   }}
