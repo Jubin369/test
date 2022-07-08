@@ -125,3 +125,26 @@ input:focus {
 input:required:invalid {
   box-shadow: none;
 } */
+.css-6j8wv5-Input{
+  padding-top: 20px !important;
+  padding-bottom: 20px;
+}
+.css-1s2u09g-control {
+  border-radius: 10px !important;
+  margin-bottom: 10px;
+}
+.css-1s2u09g-control
+.css-qc6sy-singleValue {
+  margin-left: 5px !important;
+  text-align: left;
+}
+.css-14el2xx-placeholder {
+  margin-left: 5px !important;
+  text-align: left;
+}
+.css-tj5bde-Svg {
+  display: none !important;
+}
+.css-1okebmr-indicatorSeparator {
+  display: none !important;
+}
