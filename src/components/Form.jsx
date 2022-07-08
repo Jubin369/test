@@ -1,6 +1,7 @@
 import React from "react";
 import "../css/form.css";
 import { useState,useEffect } from "react";
+import Select from 'react-select'
 import Modal from "./Modal";
 import banner from "../images/banner.png";
 import "../css/info.css";
@@ -40,6 +41,7 @@ const Form = () => {
   const [fname, setfname] = useState("");
   const [formData, setFormData] = useState(initialFormData);
   const [show, setShow] = useState(false);
+  const [options,setOptions] = useState([])
 
   useEffect(()=>{
     axios.get("http://localhost:7632/naspo").then(res=>{
@@ -48,6 +50,19 @@ const Form = () => {
         setPeople(dat);
     });
   },[]);
+
+  
+  useEffect(()=>{
+    let arrOptions = people.map((person) => {
+      let fullname = person["Full Name"].toLowerCase();
+
+      return {
+        value: fullname,
+        label: fullname,
+      };
+    });
+    setOptions(arrOptions);
+},[people]);
 
   // console.log(setPeople);
   //   notification function
@@ -476,14 +491,14 @@ const Form = () => {
           <div className="info-container">
             <form className="info-form">
               <div className="form-group">
-                <input
-                  type="text"
+                <Select 
+                  options={options}
                   name="name"
                   id="name"
                   placeholder="Name"
-                  className="info-input"
+                  
                   onChange={handleNameChange}
-                  onKeyDown={handleNameKeyDown}
+                  //onKeyDown={handleNameKeyDown}
                 />
               </div>
 
